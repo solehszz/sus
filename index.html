@@ -191,6 +191,42 @@ footer {
     text-align: center;
     background: linear-gradient(45deg, gold, orange);
 }
+   banner-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.roadmap-banner {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+.banner-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* EFEK GLOW GOLD */
+.banner-wrap::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(255,215,0,0.6), transparent 70%);
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.roadmap-banner {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+} 
 </style>
 
 <script>
@@ -310,6 +346,9 @@ window.onload = loadPrices;
 <!-- ROADMAP ) -->
 
 <div class="section">
+    <div class="banner-wrap">
+    <img src="image.png" class="roadmap-banner">
+</div>
 <h2>🗺 Roadmap</h2>
 
 <div class="roadmap">
